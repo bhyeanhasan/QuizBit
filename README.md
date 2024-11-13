@@ -1,5 +1,13 @@
+### To run the project:
+
+```python
+pip install -r requirements.txt
+python manage.py runserver
+```
+
 
 ### API Endpoints:
+
 ```
 api/token/ - Obtain JWT token.
 api/token/refresh/ - Refresh JWT token.
