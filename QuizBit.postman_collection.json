@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "30cdc02e-9adf-40d9-8ff5-286f04fe8e8a",
+		"name": "QuizBit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13926159"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "submit answer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

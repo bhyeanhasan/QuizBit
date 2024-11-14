@@ -18,6 +18,8 @@ router.register(r'answerscripts', AnswerScriptViewSet, basename='answerscript')
 urlpatterns = [
     path('', include(router.urls)),
     path('home', views.index, name='index'),
+    path('get-question-set/<id>', views.get_question_set, name='question-set'),
+    path('history/<str:username>', views.get_practice_history, name='history'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 

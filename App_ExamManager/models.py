@@ -6,12 +6,12 @@ class Exam(models.Model):
     title = models.CharField(max_length=255)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='exams')
     duration = models.PositiveIntegerField(help_text="Duration in minutes")
-    total_marks = models.PositiveIntegerField()
-    passing_marks = models.PositiveIntegerField()
+    total_marks = models.PositiveIntegerField(default=0)
+    passing_marks = models.PositiveIntegerField(default=0)
     start_time = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
-        return self.title
+        return f"{self.id} - {self.title} "
 
 
 class Enrollment(models.Model):
